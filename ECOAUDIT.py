@@ -4,7 +4,7 @@ import pandas as pd
 # 1. إعدادات الصفحة واستخدام صورة اللوغو كأيقونة للمتصفح
 st.set_page_config(
     page_title="EcoAudit AI - Enterprise Carbon Dashboard",
-    page_icon="logo.png",
+    page_icon="logo.png.jpg",
     layout="wide"
 )
 
@@ -55,13 +55,13 @@ auditor = EnterpriseCarbonAuditor()
 
 # 3. واجهة المستخدم مع دمج اللوغو
 # إدراج اللوغو في أعلى القائمة الجانبية
-st.sidebar.image("logo.png", use_container_width=True)
+st.sidebar.image("logo.png.jpg", use_container_width=True)
 st.sidebar.markdown("---")
 
 # عرض اللوغو مع العنوان الرئيسي في منتصف الشاشة
 col_logo, col_title = st.columns([1, 4])
 with col_logo:
-    st.image("logo.png", width=120)
+    st.image("logo.png.jpg", width=120)
 
 with col_title:
     st.title("EcoAudit AI: Enterprise Decarbonization Platform")
